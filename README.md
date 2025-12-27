@@ -97,27 +97,6 @@ python scripts/run_etl.py
 
 - Generate run metadata for reproducibility
 
-## Incremental Scripts (Development History)
-
-### The following scripts reflect the step-by-step development during Week 2:
-
-**Day 1 – Load raw data**
-```pash
-python scripts/run_day1_load.py
-```
-**Day 2 – Cleaning and quality checks**
-```pash
-python scripts/run_day2_clean.py
-```
-
-**Day 3 – Build analytics table**
-```pash
-python scripts/run_day3_build_analytics.py
-```
-
-These scripts are kept for **learning and reference.**
-They are **not required** once `run_etl.py` is available.
-
 ## Outputs
 
 ### After running the final ETL pipeline, the following artifacts will be created:
