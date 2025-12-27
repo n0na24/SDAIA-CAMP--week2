@@ -1,11 +1,20 @@
 {
-  "timestamp_utc": "2025-12-21T17:18:43.719891+00:00",
-  "rows": {
-    "orders": 5,
-    "users": 4
+  "rows_in_orders_raw": 5,
+  "rows_in_users_raw": 4,
+  "rows_out_analytics": 5,
+  "missing_created_at_after_parse": 1,
+  "country_match_rate": 1.0,
+  "inputs": {
+    "orders_raw": "C:\\Users\\hanan\\week2\\data\\raw\\orders.csv",
+    "users_raw": "C:\\Users\\hanan\\week2\\data\\raw\\users.csv"
   },
   "outputs": {
-    "orders": "C:\\Users\\hanan\\week2\\data\\processed\\orders.parquet",
-    "users": "C:\\Users\\hanan\\week2\\data\\processed\\users.parquet"
+    "orders_clean": "C:\\Users\\hanan\\week2\\data\\processed\\orders_clean.parquet",
+    "users": "C:\\Users\\hanan\\week2\\data\\processed\\users.parquet",
+    "analytics_table": "C:\\Users\\hanan\\week2\\data\\processed\\analytics_table.parquet",
+    "run_meta": "C:\\Users\\hanan\\week2\\data\\processed\\_run_meta.json"
+  },
+  "config": {
+    "root": "C:\\Users\\hanan\\week2"
   }
 }
