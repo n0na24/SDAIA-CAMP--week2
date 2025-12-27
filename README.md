@@ -137,20 +137,5 @@ notebooks/eda.ipynb
 
 - Run metadata logging for auditing and debugging
 
-## Quick Reproduce Checklist
 
-### After cloning the repository:
-```pash
-pip install -r requirements.txt
-pip install -e .
-python scripts/run_etl.py
-```
-
-### You should see:
-
-- Processed data in `data/processed/`
-
-- Figures in `reports/figures/`
-
-- `_run_meta.json` generated successfully
 
