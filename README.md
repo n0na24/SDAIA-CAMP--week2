@@ -57,20 +57,14 @@ The final pipeline is implemented in `src/bootcamp_data/etl.py` and executed via
 ## Setup
 
 ```text
-
-Create and activate a virtual environment, then install dependencies.
-```
-### Create a virtual environment
-```md
+### 1️⃣ Create a Virtual Environment
 ```bash
 python -m venv .venv
-```
-Activate the environment:
 
-macOS / Linux
-
+### 2️⃣ Activate the Environment
+**macOS / Linux**
+```bash
 source .venv/bin/activate
-
 
 Windows (PowerShell)
 
