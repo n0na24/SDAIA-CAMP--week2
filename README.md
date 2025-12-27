@@ -54,14 +54,16 @@ The final pipeline is implemented in `src/bootcamp_data/etl.py` and executed via
 ├── pyproject.toml
 └── README.md
 ```
+## Setup
 
 ```text
-##Setup
 
 Create and activate a virtual environment, then install dependencies.
 
 Create a virtual environment:
-
+### PowerShell
+```md
+```powershell
 python -m venv .venv
 
 
