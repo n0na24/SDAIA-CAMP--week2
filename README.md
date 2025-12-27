@@ -66,26 +66,26 @@ python -m venv .venv
 ```bash
 source .venv/bin/activate
 ```
-
-Windows (PowerShell)
-
+**Windows (PowerShell)**
+```md
+```powershell
 .venv\Scripts\Activate.ps1
-
-
-Install dependencies and the project in editable mode:
-
+```
+```
+### 3️⃣ Install Dependencies
+**Install dependencies and the project in editable mode:**
+```pash
 pip install -r requirements.txt
 pip install -e .
+```
 
-Running the ETL
-✅ Recommended (Final Pipeline)
-
-Run the complete ETL pipeline:
-
+## Running the ETL
+### ✅ Recommended (Final Pipeline)
+**Run the complete ETL pipeline:**
+```pash
 python scripts/run_etl.py
-
-
-This will:
+```
+**This will:**
 
 Read raw data from data/raw/
 
