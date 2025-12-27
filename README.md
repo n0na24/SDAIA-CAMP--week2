@@ -99,29 +99,17 @@ python scripts/run_etl.py
 
 ## Outputs
 
-### After running the final ETL pipeline, the following artifacts will be created:
-```pash 
-data/processed/orders_clean.parquet
-```
-**Cleaned orders table (order-level only)**
-```pash
-data/processed/users.parquet
-```
-**Cleaned users table**
-```pash
-data/processed/analytics_table.parquet
-```
-**Final analytics table enriched with user and time features**
-```pash
-data/processed/_run_meta.json
-```
-**Run metadata including row counts and key data quality statistics**
-```pash
-reports/figures/*.png
-```
-**Exported figures generated during EDA**
-----
-### All outputs are idempotent and safe to regenerate by re-running the pipeline.
+- `data/processed/orders_clean.parquet`
+
+- `data/processed/users.parquet`
+
+- `data/processed/analytics_table.parquet`
+
+- `data/processed/_run_meta.json`
+
+- `reports/figures/*.png`
+
+All outputs are idempotent and safe to regenerate.
 
 ## EDA (Exploratory Data Analysis)
 
