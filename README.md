@@ -152,9 +152,6 @@ notebooks/eda.ipynb
 ```
 **Run all cells to reproduce the analysis and figures.**
 
-**⚠️ Important**
-The notebook reads **only** from processed data in `data/processed/` to ensure
-reproducibility.
 ## Data Quality & Reproducibility
 
 ### The ETL pipeline includes:
