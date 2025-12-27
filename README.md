@@ -85,7 +85,7 @@ python scripts/run_etl.py
 ```
 **What This Will Do**
 
-- Read raw data from **data/raw/**
+- Read raw data from `data/raw/`
 
 - Apply fail-fast data quality checks
 
@@ -93,7 +93,7 @@ python scripts/run_etl.py
 
 - Safely join orders with users
 
-- Write processed datasets to **data/processed/**
+- Write processed datasets to `data/processed/`
 
 - Generate run metadata for reproducibility
 
@@ -116,7 +116,7 @@ python scripts/run_day3_build_analytics.py
 ```
 
 These scripts are kept for **learning and reference.**
-They are **not required** once **run_etl.py** is available.
+They are **not required** once `run_etl.py` is available.
 
 ## Outputs
 
@@ -155,7 +155,6 @@ notebooks/eda.ipynb
 **⚠️ Important**
 The notebook reads **only** from processed data in `data/processed/` to ensure
 reproducibility.
--------------------------------------
 ## Data Quality & Reproducibility
 
 ### The ETL pipeline includes:
