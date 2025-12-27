@@ -95,62 +95,65 @@ python scripts/run_etl.py
 
 - Write processed datasets to **data/processed/**
 
-Generate run metadata for reproducibility
+- Generate run metadata for reproducibility
 
-Incremental Scripts (Development History)
+## Incremental Scripts (Development History)
 
-The following scripts reflect the step-by-step development during Week 2:
+### The following scripts reflect the step-by-step development during Week 2:
 
-Day 1 – Load raw data
-
+**Day 1 – Load raw data**
+```pash
 python scripts/run_day1_load.py
-
-
-Day 2 – Cleaning and quality checks
-
+```
+**Day 2 – Cleaning and quality checks**
+```pash
 python scripts/run_day2_clean.py
+```
 
-
-Day 3 – Build analytics table
-
+**Day 3 – Build analytics table**
+```pash
 python scripts/run_day3_build_analytics.py
+```
 
+These scripts are kept for **learning and reference.**
+They are **not required** once **run_etl.py** is available.
 
-These scripts are kept for learning and reference.
-They are not required once run_etl.py is available.
+## Outputs
 
-Outputs
-
-After running the final ETL pipeline, the following artifacts will be created:
-
+### After running the final ETL pipeline, the following artifacts will be created:
+```pash 
 data/processed/orders_clean.parquet
-Cleaned orders table (order-level only)
-
+```
+**Cleaned orders table (order-level only)**
+```pash
 data/processed/users.parquet
-Cleaned users table
-
+```
+**Cleaned users table**
+```pash
 data/processed/analytics_table.parquet
-Final analytics table enriched with user and time features
-
+```
+**Final analytics table enriched with user and time features**
+```pash
 data/processed/_run_meta.json
-Run metadata including row counts and key data quality statistics
-
+```
+**Run metadata including row counts and key data quality statistics**
+```pash
 reports/figures/*.png
-Exported figures generated during EDA
+```
+**Exported figures generated during EDA**
+----
+### All outputs are idempotent and safe to regenerate by re-running the pipeline.
 
-All outputs are idempotent and safe to regenerate by re-running the pipeline.
+## EDA (Exploratory Data Analysis)
 
-EDA (Exploratory Data Analysis)
-
-Open the EDA notebook:
-
+### Open the EDA notebook:
+```pash
 notebooks/eda.ipynb
+```
+**Run all cells to reproduce the analysis and figures.**
 
-
-Run all cells to reproduce the analysis and figures.
-
-Important:
-The notebook reads only from processed data in data/processed/ to ensure
+## **⚠️ Important**
+The notebook reads **only** from processed data in **data/processed/** to ensure
 reproducibility.
 
 Data Quality & Reproducibility
