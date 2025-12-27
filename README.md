@@ -67,7 +67,6 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 **Windows (PowerShell)**
-```md
 ```powershell
 .venv\Scripts\Activate.ps1
 ```
@@ -84,17 +83,17 @@ pip install -e .
 ```pash
 python scripts/run_etl.py
 ```
-**This will:**
+**What This Will Do**
 
-Read raw data from data/raw/
+- Read raw data from **data/raw/**
 
-Apply fail-fast data quality checks
+- Apply fail-fast data quality checks
 
-Clean and transform the data
+- Clean and transform the data
 
-Safely join orders with users
+- Safely join orders with users
 
-Write processed datasets to data/processed/
+- Write processed datasets to **data/processed/**
 
 Generate run metadata for reproducibility
 
