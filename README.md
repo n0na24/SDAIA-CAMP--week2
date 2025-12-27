@@ -152,42 +152,42 @@ notebooks/eda.ipynb
 ```
 **Run all cells to reproduce the analysis and figures.**
 
-## **⚠️ Important**
-The notebook reads **only** from processed data in **data/processed/** to ensure
+**⚠️ Important**
+The notebook reads **only** from processed data in `data/processed/` to ensure
 reproducibility.
+-------------------------------------
+## Data Quality & Reproducibility
 
-Data Quality & Reproducibility
+### The ETL pipeline includes:
 
-The ETL pipeline includes:
+- Required column validation
 
-Required column validation
+- Non-empty dataset checks
 
-Non-empty dataset checks
+- Unique key validation for users
 
-Unique key validation for users
+- Safe joins with cardinality enforcement
 
-Safe joins with cardinality enforcement
+- Missing value flags
 
-Missing value flags
+- Outlier detection and winsorization
 
-Outlier detection and winsorization
+- Run metadata logging for auditing and debugging
 
-Run metadata logging for auditing and debugging
+## Quick Reproduce Checklist
 
-Quick Reproduce Checklist
-
-After cloning the repository:
-
+### After cloning the repository:
+```pash
 pip install -r requirements.txt
 pip install -e .
 python scripts/run_etl.py
+```
 
+### You should see:
 
-You should see:
+- Processed data in `data/processed/`
 
-Processed data in data/processed/
+- Figures in `reports/figures/`
 
-Figures in reports/figures/
-
-_run_meta.json generated successfully
+- `_run_meta.json` generated successfully
 
