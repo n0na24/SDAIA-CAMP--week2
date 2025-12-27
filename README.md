@@ -63,8 +63,8 @@ Create and activate a virtual environment, then install dependencies.
 ### Create a virtual environment
 ```bash
 python -m venv .venv
-
-# Activate the environment:
+```
+Activate the environment:
 
 macOS / Linux
 
