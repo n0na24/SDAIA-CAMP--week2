@@ -71,7 +71,6 @@ source .venv/bin/activate
 ```powershell
 .venv\Scripts\Activate.ps1
 ```
-```
 ### 3️⃣ Install Dependencies
 **Install dependencies and the project in editable mode:**
 ```pash
